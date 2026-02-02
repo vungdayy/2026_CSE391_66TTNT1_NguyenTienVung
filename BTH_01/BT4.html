@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập 04</title>
+  </head>
+  <body>
+    <form>
+      <!-- basic info -->
+      <fieldset>
+        <legend><b>Basic Information</b></legend>
+        <table>
+          <tr>
+            <td>Employee ID</td>
+            <td><input type="text" value="9" readonly /></td>
+          </tr>
+          <tr>
+            <td>Last Name</td>
+            <td><input type="text" value="Dodsworth" readonly /></td>
+          </tr>
+          <tr>
+            <td>First Name</td>
+            <td><input type="text" value="Anne" /></td>
+          </tr>
+          <tr>
+            <td>Gender</td>
+            <td>
+              <input type="radio" name="gender" value="male" id="male" />
+              <label for="male">Male</label>
+              <input type="radio" name="gender" value="female" id="female" />
+              <label for="female">Female</label>
+              <input type="radio" name="gender" value="XXX" id="XXX" />
+              <label for="XXX">XXX</label>
+              <input type="radio" name="gender" value="ZZZ" id="ZZZ" />
+              <label for="ZZZ">ZZZ</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Title</td>
+            <td><input type="text" value="Sales Representative" /></td>
+          </tr>
+          <tr>
+            <td>Sunffic</td>
+            <td><input type="text" value="Ms." /></td>
+          </tr>
+          <tr>
+            <td>Birth Date</td>
+            <td><input type="date" value="1966-01-27" /></td>
+          </tr>
+          <tr>
+            <td>Hire Date</td>
+            <td><input type="date" value="1994-11-15" /></td>
+          </tr>
+          <tr>
+            <td>SSN # (if applicable)</td>
+            <td><input type="text" value="000-00-0000" /></td>
+          </tr>
+          <tr>
+            <td>Reports To</td>
+            <td>
+              <select>
+                <option>Buchanan</option>
+                <option>Fuller</option>
+                <option>Davolio</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <br />
+      <!-- contact info -->
+      <fieldset>
+        <legend><b>Contact Info</b></legend>
+        <table>
+          <tr>
+            <td>Email</td>
+            <td><input type="email" value="name@example.com" /></td>
+          </tr>
+          <tr>
+            <td>Address</td>
+            <td><input type="text" value="14 Garrett Hill" /></td>
+          </tr>
+          <tr>
+            <td>City</td>
+            <td><input type="text" value="London" /></td>
+          </tr>
+          <tr>
+            <td>Region</td>
+            <td><input type="text" value="" /></td>
+          </tr>
+          <tr>
+            <td>Postal Code</td>
+            <td><input type="text" value="SW1 8JR" /></td>
+          </tr>
+          <tr>
+            <td>Country</td>
+
+            <td>
+              <select>
+                <option value="UK">UK</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>US Home Phone</td>
+            <td><input type="text" value="(71) 555-1212" /></td>
+          </tr>
+          <tr>
+            <td>Photo</td>
+            <td><input type="file" /></td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <br />
+
+      <!-- OPTIONAL INFO -->
+      <fieldset>
+        <legend><b>Optional Info</b></legend>
+
+        <textarea rows="5" cols="70">
+Anne has a BA degree in English from St. Lawrence College.
+She is fluent in French and German.
+        </textarea>
+      </fieldset>
+
+      <br />
+
+      <!-- SHIFT -->
+      <fieldset>
+        <legend><b>Preferred Shift</b></legend>
+
+        <input type="checkbox" checked /> Regular
+        <input type="checkbox" /> Grave Yard <br /><br />
+        Active? <input type="checkbox" checked />
+      </fieldset>
+
+      <br />
+
+      <!-- CAPTCHA -->
+      Are you human?
+      <input type="text" placeholder="TIDAWO" />
+
+      <br /><br />
+
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Cancel" />
+    </form>
+  </body>
+</html>
